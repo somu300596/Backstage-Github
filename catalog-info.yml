@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-docker-app
+  description: My Dockerized Application
+  tags:
+    - docker
+  links:
+    - url: https://github.com/somu300596/Backstage-Github/blob/main/Dockerfile
+      title: Dockerfile
+    - url: https://hub.docker.com/r/somu123/Backstage-Github
+      title: Docker Image
+spec:
+  type: service
+  lifecycle: experimental
+  owner: somu
+  
