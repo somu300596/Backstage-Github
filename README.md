@@ -15,6 +15,10 @@ The GitHub workflow file has four steps, which will be triggered on push events:
 
 
 ## Backstage - GitHub
+I have started with linking the Github repository with Backstage. There is a file called catalog-info.yml which when registered as an existing component will create a new component in the backstage.
+To integrate the GitHub events with Backstage I intially started with GitHub webhooks and create a service in Backstage to subscribe to the events, but I couldn't get progress with that approach since webhooks in GitHub requires public IP of the backstage and since I was running backstage on localhost, I couldn't provide an URL for webhook and also had some issues with creating plugin in the backstage for subscribing to the events. Ofcourse this could be easier if there is an instance of backstage running in AWS EC2 instance but I did not have enough time to do setup for that approach. Polling could be also another approach (instead of webhooks).
+
+**But eventually due to time constraints I coulnd't complete backstage and GitHub integration**
 
 ## Docker image deployment - AWS
 
